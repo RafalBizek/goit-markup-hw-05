@@ -305,7 +305,7 @@ ul {
 }
 
 /* Ours clients secton */
-.our-clients__title {
+.clients__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -314,18 +314,18 @@ ul {
   margin-bottom: 50px;
 }
 
-.our-clients__title::first-letter {
+.clients__title::first-letter {
   text-transform: uppercase;
 }
 
-.our-clients__items {
+.clients__items {
   --space-gap: 30px;
   display: flex;
   gap: var(--space-gap);
   flex-wrap: wrap;
 }
 
-.our-clients__item {
+.clients__item {
   list-style: none;
   --color-stroke: #afb1bb;
   border: 1px solid var(--color-stroke);
@@ -334,19 +334,19 @@ ul {
   flex-basis: calc((100% - 5 * va(--space-gap)) / 6);
 }
 
-.our-clients__icon {
+.clients__icon {
   --color2: #afb1bb;
   fill: var(--color2);
 }
 
-.our-clients__item:hover,
-.our-clients__item:focus {
+.clients__item:hover,
+.clients__item:focus {
   cursor: pointer;
   border: 1px solid var(--color-four);
 }
 
-.our-clients__icon:hover,
-.our-clients__icon:focus {
+.clients__link:hover,
+.clients__link:focus {
   --color1: var(--color-four);
   --color2: var(--color-four);
   fill: var(--color1);
@@ -422,8 +422,7 @@ ul {
 }
 
 .footer__icon {
-  margin-right: 10px;
-  --color3: rgb(255, 255, 255, 10%);
+  --color3: rgba(255, 255, 255, 10%);
   --color1: var(--color-first);
   fill: var(--color3);
 }

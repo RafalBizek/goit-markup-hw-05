@@ -42,13 +42,19 @@
         </nav>
         <ul class="header__contact">
           <li class="header__contact-item">
-            <a class="header__contact-link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
+            <a class="header__contact-link" href="mailto:info@devstudio.com">
+              <svg class="header__icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
             >
           </li>
           <li class="header__contact-item">
-            <a class="header__contact-link" href="tel:+48111111111"
-              >+48 111 111 111</a
+            <a class="header__contact-link" href="tel:+48111111111">
+              <svg class="header__icon--phone" width="10" height="16">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +48 111 111 111</a
             >
           </li>
         </ul>
@@ -179,36 +185,75 @@
     <!--Website footer-->
     <footer class="footer">
       <div class="container">
-        <a class="footer__logo" href="./index.html"
-          ><span class="logo__primary-part">web</span>Studio</a
-        >
-        <address>
-          <ul class="footer__contact">
-            <li class="footer__contact-item">
-              <a
-                class="footer__contact-link footer__contact-link-location"
-                href="https://goo.gl/maps/kYdDBKaU15SzFSr7A"
-                target="_blank"
-              >
-                m.
-                <span class="footer__location"
-                  >warszawa, aleje jerozolimskie</span
-                >
-                21
-              </a>
-            </li>
-            <li class="footer__contact-item">
-              <a class="footer__contact-link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="footer__contact-item">
-              <a class="footer__contact-link" href="tel:+48111111111"
-                >+48 111 111 111</a
-              >
-            </li>
-          </ul>
-        </address>
+        <div class="footer__contact-wrapper">
+          <div class="footer__contact-container">
+            <a class="footer__logo" href="./index.html"
+              ><span class="logo__primary-part">web</span>Studio</a
+            >
+            <address>
+              <ul class="footer__contact">
+                <li class="footer__contact-item">
+                  <a
+                    class="footer__contact-link footer__contact-link-location"
+                    href="https://goo.gl/maps/kYdDBKaU15SzFSr7A"
+                    target="_blank"
+                  >
+                    m.
+                    <span class="footer__location"
+                      >warszawa, aleje jerozolimskie</span
+                    >
+                    21
+                  </a>
+                </li>
+                <li class="footer__contact-item">
+                  <a
+                    class="footer__contact-link"
+                    href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="footer__contact-item">
+                  <a class="footer__contact-link" href="tel:+48111111111"
+                    >+48 111 111 111</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer__social">
+            <h2 class="footer__title">dołącz do nas</h2>
+            <ul class="footer__icon-items">
+              <li class="footer__icon-item">
+                <a href="#" target="_blank" class="footer__icon-link">
+                  <svg class="footer__icon" width="44" height="44">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__icon-item">
+                <a href="#" target="_blank" class="footer__icon-link">
+                  <svg class="footer__icon" width="44" height="44">
+                    <use href="./images/icons.svg#icon-twietter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__icon-item">
+                <a href="#" target="_blank" class="footer__icon-link">
+                  <svg class="footer__icon" width="44" height="44">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__icon-item">
+                <a href="#" target="_blank" class="footer__icon-link">
+                  <svg class="footer__icon" width="44" height="44">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </footer>
   </body>
