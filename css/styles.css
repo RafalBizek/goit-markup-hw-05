@@ -290,9 +290,6 @@ ul {
   --color-stroke: #afb1bb;
   border: 1px solid var(--color-stroke);
   border-radius: 3px;
-  /* padding: 17.71px 32px 14.25px 32px; */
-  flex-basis: calc((100% - 5 * va(--space-gap)) / 6);
-  /* padding: 7px 32px 6.34px 32px; */
 }
 .clients__icon {
   --color2: #afb1bb;
