@@ -322,37 +322,25 @@ body {
   --color-stroke: #afb1bb;
   border: 1px solid var(--color-stroke);
   border-radius: 3px;
-  transition: border;
-  transition-duration: 2500ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.clients__icon {
-  --color2: #afb1bb;
-  fill: var(--color2);
-  /*  */
-  transition: color;
-  transition-duration: 2500ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.clients__link {
-  display: block;
-  /*  */
-  color: red;
-  transition: color;
-  transition-duration: 2500ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  /*  */
+  transition: border, cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients__item:hover,
 .clients__item:focus {
   cursor: pointer;
   border: 1px solid var(--color-four);
+  transition: border 250ms;
+}
+.clients__link {
+  display: block;
+  --color1: #afb1bb;
+  fill: var(--color1);
+  transition: fill, cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients__link:hover,
 .clients__link:focus {
   --color1: var(--color-four);
-  /* --color2: var(--color-four); */
-  fill: var(--color1);
+  fill: var(--color1); 
+  transition: 250ms;
 }
 .clients__item:nth-child(1) .clients__icon {
   margin: 24.71px 65px 20.58px 64px;
