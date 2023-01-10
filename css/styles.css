@@ -80,10 +80,10 @@ body {
   line-height: 1.17;
   color: var(--color-second);
   text-transform: capitalize;
-  transition: color, cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
 }
-.header__menu-link::after {
+.header__menu-link:active::after {
   content: "";
   width: 53px;
   height: 4px;
@@ -99,14 +99,13 @@ body {
   color: var(--color-third);
   display: flex;
   justify-content: center;
-  transition: color, cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__menu-link:hover,
 .header__menu-link:focus,
 .header__contact-link:hover,
 .header__contact-link:focus {
   color: var(--color-four);
-  transition: color 250ms;
 }
 .header__contact-item:not(:last-child) {
   margin-right: 50px;
@@ -322,25 +321,23 @@ body {
   --color-stroke: #afb1bb;
   border: 1px solid var(--color-stroke);
   border-radius: 3px;
-  transition: border, cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients__item:hover,
 .clients__item:focus {
   cursor: pointer;
   border: 1px solid var(--color-four);
-  transition: border 250ms;
 }
 .clients__link {
   display: block;
   --color1: #afb1bb;
   fill: var(--color1);
-  transition: fill, cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients__link:hover,
 .clients__link:focus {
   --color1: var(--color-four);
-  fill: var(--color1); 
-  transition: 250ms;
+  fill: var(--color1);
 }
 .clients__item:nth-child(1) .clients__icon {
   margin: 24.71px 65px 20.58px 64px;
@@ -396,7 +393,7 @@ body {
   line-height: 1.71;
   list-style: none;
   color: var(--color-third);
-  transition: color, cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer__location {
   text-transform: capitalize;
@@ -404,7 +401,6 @@ body {
 .footer__contact-item .footer__contact-link:hover,
 .footer__contact-item .footer__contact-link:focus {
   color: var(--color-four);
-  transition: 250ms;
 }
 .footer__contact-wrapper {
   display: flex;
@@ -438,7 +434,7 @@ body {
   height: 44px;
   border-radius: 50px;
   margin-right: 10px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer__icon-link:hover,
 .footer__icon-link:focus {
@@ -470,9 +466,7 @@ body {
   font-weight: 500;
   line-height: 1.62;
   color: var(--color-second);
-  /*  */
-  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
-  transition: background-color, color, box-shadow, cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filters__button:hover,
 .filters__button:focus {
@@ -480,8 +474,6 @@ body {
   background-color: var(--color-four);
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  /*  */
-  transition: background-color 250ms, color 250ms, box-shadow 250ms;
 }
 /*------------------------cards of projects----------------------*/
 .card {
@@ -496,17 +488,13 @@ body {
   border-left: 1px solid var(--border-project-color);
   border-bottom: 1px solid var(--border-project-color);
   border-right: 1px solid var(--border-project-color);
-  /*  */
-  box-shadow: 0px 0px 0px var(--shadow);
-  transition: box-shadow, cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .card__img:hover {
   --shadow: rgba(0, 0, 0, 0.25);
   box-shadow: 0px 4px 4px var(--shadow);
-  /*  */
-  transition: box-shadow 250ms;
 }
 .card__title {
   font-size: 18px;
@@ -538,7 +526,7 @@ body {
   top: 0;
   left: 0;
   transform: translateY(102%);
-  transition: transform 250ms;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .card__overlay-text {
   color: var(--color-first);
@@ -555,12 +543,13 @@ body {
 }
 /* -----------------modal window-------------------- */
 .backdrop {
+  --color-backdrop: rgba(0, 0, 0, 0.2);
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: var(--color-backdrop);
 }
 .is-hidden {
   pointer-events: none;
@@ -571,11 +560,8 @@ body {
 }
 .modal {
   position: absolute;
-  /* top: 221px;
-  right: 536px; */
   top: 221px;
   left: 1000px;
-
   width: 528px;
   min-height: 581px;
   border-radius: 4px;
